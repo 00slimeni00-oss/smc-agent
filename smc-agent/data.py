@@ -2,7 +2,7 @@
 import json
 import urllib.request
 
-BINANCE_BASE = "https://api.binance.com/api/v3/klines"
+BINANCE_BASE = "https://data-api.binance.vision/api/v3/klines"
 YAHOO_BASE = "https://query1.finance.yahoo.com/v8/finance/chart"
 
 def _get_json(url):
