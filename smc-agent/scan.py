@@ -31,6 +31,10 @@ def main():
                   f"SL={r['sl']:.2f} TP={r['tp']:.2f} RR={r['rr']:.2f} grade={r['grade']}")
         else:
             print(f"NO TRADE {r['pair']}: {r.get('reason')}")
+    try:
+        alert.send(results)
+    except Exception as e:
+        print(f"email error {e}")
     return results
 
 if __name__ == "__main__":
