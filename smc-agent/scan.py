@@ -3,6 +3,7 @@ import os
 import config
 import data
 import smc
+import alert
 
 def scan_pair(trade, confirmer, crypto=True):
     try:
